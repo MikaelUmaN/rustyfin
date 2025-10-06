@@ -9,6 +9,6 @@ name = "rustfin"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = "0.25.0"
+pyo3 = { version = "0.25", features = ["extension-module"] } 
 statrs = "0.16"
 approx = "0.5"
