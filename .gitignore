@@ -1,0 +1,37 @@
+# Rust build artifacts
+/target/
+
+# Python build artifacts & wheel outputs
+*.pyc
+__pycache__/
+/build/
+/dist/
+/wheels/
+*.egg-info/
+
+# Virtual envs (only if created locally)
+.venv/
+.env/
+
+# Cargo/PyO3 generated wheels (already covered by /wheels but keep pattern for safety)
+*.whl
+
+# Lock files you keep (keep Cargo.lock & uv.lock tracked) -> do NOT ignore
+# (Intentionally allowing Cargo.lock and uv.lock to remain under version control)
+
+# Editor / OS noise
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Coverage / test caches
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Maturin / PyO3 build cache (if used)
+.maturin-build/
+
+# Misc
+*.log
